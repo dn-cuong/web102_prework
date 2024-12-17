@@ -199,3 +199,21 @@ firstGameContainer.append(firstGameElement);
 const secondGameElement = document.createElement("div");
 secondGameElement.innerHTML = `${secondGame.name}`;
 secondGameContainer.append(secondGameElement);
+
+// Get the button
+const scrollToTopBtn = document.getElementById("scroll-to-top-btn");
+
+// Show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+// Scroll to the top of the document when the user clicks the button
+scrollToTopBtn.addEventListener("click", function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});

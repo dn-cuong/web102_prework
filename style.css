@@ -79,3 +79,20 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scroll-to-top-btn:hover {
+    background-color: #333;
+}
